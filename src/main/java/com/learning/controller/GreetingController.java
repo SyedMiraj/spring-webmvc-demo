@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-public class HelloController {
+public class GreetingController {
 
     @RequestMapping(value = "/greeting", method = RequestMethod.GET)
     public String greeting(@RequestParam(value = "name", required = false, defaultValue = "World") String name, ModelMap modelMap){
